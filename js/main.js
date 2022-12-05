@@ -14,8 +14,8 @@
 // 	console.log(data);
 // });
 // ForeCast
-let lat = 37.5665;
-let long = 126.9780;
+let lat = 29.4252;
+let long = -98.4916;
 $.get("http://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon="+ long +"&appid=" + OPEN_WEATHER_APPID + "&units=metric").done(function(data) {
 	let reports = data.list;
 	for(let i = 0; i < reports.length; i += 8) {
@@ -35,6 +35,7 @@ $.get("http://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon="+ long
 // 	console.log('Diving in - here is current information: ', data.current);
 // 	console.log('A step further - information for tomorrow: ', data.daily[1]);
 // });
+
 // MapBox
 mapboxgl.accessToken = MAPBOX_APPID;
 let map = new mapboxgl.Map({
