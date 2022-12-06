@@ -1,15 +1,22 @@
+body {
+    background-color: lightskyblue;
+}
+h1 {
+    text-align: center;
+    margin: 1em;
+}
 #map {
     height: 500px;
-    width: 100%;
+    width: 98%;
+    border: 2px solid black;
+    margin: 1em 2em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-/*#card {*/
-/*    border: 2px solid black;*/
-/*    margin: .75em 1em;*/
-/*    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
-/*}*/
 #cards {
-    border: solid 2px black;
-    /*margin-bottom: 3.5em;*/
+    border: solid 3px black;
+    margin-bottom: 3.5em;
     margin-left: 1.5em;
     margin-right: .5em;
+    background-color: blanchedalmond;
+    border-radius: 20px;
 }

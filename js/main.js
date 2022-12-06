@@ -10,27 +10,16 @@ $.get("http://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon="+ long
 		console.log(reports[i]);
 		html += "<div id='cards' class='col-sm-2'>";
 		// html += "<p>" "</p>"
-		html += "<p> Feels like: " + reports[i].main.feels_like + "</p>";
-		html += "<p>" + reports[i].main.temp + "</p>";
+		html += "<p>Feels Like: " + reports[i].main.feels_like + "</p>";
+		html += "<p>Date & Time: " + reports[i].dt_txt + "</p>";
+		html += "<p>Min Temperature: " + reports[i].main.temp_min + "</p>";
+		// html += "<p>Weather Report: " + reports[i].weather.{} + "</p>";
 		html += "</div>"
 	};
 	html += "</p>"
 	console.log(html);
 	$("#container").html(html);
 });
-
-
-// One call
-// $.get("http://api.openweathermap.org/data/2.5/onecall", {
-// 	APPID: OPEN_WEATHER_APPID,
-// 	lat:    29.423017,
-// 	lon:   -98.48527,
-// 	units: "imperial"
-// }).done(function(data) {
-// 	console.log('The entire response:', data);
-// 	console.log('Diving in - here is current information: ', data.current);
-// 	console.log('A step further - information for tomorrow: ', data.daily[1]);
-// });
 
 // MapBox
 mapboxgl.accessToken = MAPBOX_APPID;
