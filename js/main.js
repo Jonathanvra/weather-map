@@ -13,11 +13,11 @@ $.get("http://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon="+ long
 		html += "<p>Feels Like: " + reports[i].main.feels_like + "</p>";
 		html += "<p>Date & Time: " + reports[i].dt_txt + "</p>";
 		html += "<p>Min Temperature: " + reports[i].main.temp_min + "</p>";
-		// html += "<p>Weather Report: " + reports[i].weather.{} + "</p>";
+		html += "<p>Max Temperature: " + reports[i].main.temp_max + "</p>";
+		html += "<p>Weather Report: " + reports[i].weather[0].description + "</p>";
 		html += "</div>"
 	};
 	html += "</p>"
-	console.log(html);
 	$("#container").html(html);
 });
 
@@ -29,7 +29,7 @@ let map = new mapboxgl.Map({
 	zoom: 10,
 	center: [-98.480580, 29.494300]
 });
-
+// Marker
 var marker = new mapboxgl.Marker({
 	draggable: true,
 	color: "#19e813"
