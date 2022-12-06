@@ -2,8 +2,14 @@
     height: 500px;
     width: 100%;
 }
-.card {
-    border: 2px solid black;
-    margin: .75em 1em;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+/*#card {*/
+/*    border: 2px solid black;*/
+/*    margin: .75em 1em;*/
+/*    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+/*}*/
+#cards {
+    border: solid 2px black;
+    /*margin-bottom: 3.5em;*/
+    margin-left: 1.5em;
+    margin-right: .5em;
 }
